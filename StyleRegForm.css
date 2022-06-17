@@ -1,13 +1,13 @@
 
-    .bodyDiv{
-        background-color: hsl(0, 100%, 74%); width: fit-content; margin-left: 50px; margin-top: 50px; padding: 50px;
+    .bodyDiv {
+        background-color: hsl(0, 100%, 74%); 
+        width: fit-content; margin-left: 50px; margin-top: 50px; padding: 50px;
+        background-image: url("bg-intro-desktop.png");
+        background-blend-mode: darken;
     }
 
+
 @media screen and (max-width : 1440px) {
-    .bodyDiv img{
-        src: url(../judithgeorge.github.io/bg-intro-desktop.png);
-        mix-blend-mode: darken;
-    }
 
     .grid-container {
         display: grid;
