@@ -1,0 +1,119 @@
+
+@media screen and (max-width : 1000px) {
+    input{
+        max-width: 100px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    input[type=submit] {
+        max-width: 200px;
+    }
+
+    h1{
+       font-size: 25px; 
+    }
+}
+
+@media screen and (min-width : 1000px) {
+    h1{
+    font-size:50px
+    }
+}
+
+body{
+    background-color: #000000;
+}
+
+.bodyDiv{
+    background-color: hsl(0, 100%, 74%); width: fit-content; margin-left: 50px; margin-top: 50px; padding: 50px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: auto auto auto;
+}
+
+.grid-item1 {
+    grid-column: 1;
+    font-family: 'Poppins', sans-serif;
+    grid-row: 2;
+    color: #ffffff;
+}
+
+.grid-item2 {
+    grid-column: 2;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    grid-row: 1 / span 3;
+}
+
+h1{
+    font-weight: bolder;
+    padding: 20px;
+    padding-right: 60px;
+    margin: 20px;
+}
+
+.grid-item1 p{
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.tryDiv{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    padding: 1px;
+    margin: 20px;
+    box-shadow: 0px 6px 0px 0px rgba(65, 61, 61, 0.315);
+}
+
+.tryDiv span{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tryDiv p{
+    color: hsl(246, 25%, 77%);
+}
+
+.formDiv{
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px 10px 10px 10px;
+}
+
+input{
+    background-color: none;
+    width: 400px;
+    margin: 10px 20px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: hsl(246, 25%, 77%);
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: hsl(154, 59%, 51%);
+    width: 430px;
+    margin: 10px 20px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.formDiv p{
+    color: hsl(246, 25%, 77%);
+    font-size: 14px;
+}
+
+.formDiv span a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
