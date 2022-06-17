@@ -1,5 +1,13 @@
 
+    .bodyDiv{
+        background-color: hsl(0, 100%, 74%); width: fit-content; margin-left: 50px; margin-top: 50px; padding: 50px;
+    }
+
 @media screen and (max-width : 1440px) {
+    .bodyDiv img{
+        src: url(../judithgeorge.github.io/bg-intro-desktop.png);
+        mix-blend-mode: darken;
+    }
 
     .grid-container {
         display: grid;
@@ -101,6 +109,11 @@
 }
 
 @media screen and (max-width : 700px) {
+    .bodyDiv img{
+        src: url(../judithgeorge.github.io/bg-intro-desktop.png);
+        mix-blend-mode: darken;
+    }
+
     .grid-container {
         display: grid;
         gap: 20px 20px;
@@ -198,8 +211,4 @@
 
 body{
     background-color: #000000;
-}
-
-.bodyDiv{
-    background-color: hsl(0, 100%, 74%); width: fit-content; margin-left: 50px; margin-top: 50px; padding: 50px;
 }

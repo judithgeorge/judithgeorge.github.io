@@ -29,13 +29,21 @@
 
                 <div class="formDiv">
                     <form>
-                        <input type="text" id="fname" name="fname" placeholder="First Name" required autofocus>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required autofocus                 
+                            oninvalid="this.setCustomValidity('First Name cannot be empty')"
+                            oninput="this.setCustomValidity('')">
 
-                        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required
+                        oninvalid="this.setCustomValidity('Last Name cannot be empty')"
+                            oninput="this.setCustomValidity('')">
 
-                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required
+                        oninvalid="this.setCustomValidity('Looks Like this is not an email')"
+                            oninput="this.setCustomValidity('')">
 
-                        <input type="password" id="pwd" name="pwd" placeholder="Password" required>
+                        <input type="password" id="pwd" name="pwd" placeholder="Password" required
+                        oninvalid="this.setCustomValidity('Password cannot be empty')"
+                            oninput="this.setCustomValidity('')">
 
                         <input type="submit" value="CLAIM YOUR FREE TRIAL">
                     </form>
