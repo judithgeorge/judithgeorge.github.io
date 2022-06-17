@@ -1,0 +1,141 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+.row1 {
+    background-color: hsl(31, 77%, 52%);
+    width: 250px;
+    padding: 0px 20px;
+    height: 450px;
+}
+
+.row2 {
+    background-color: hsl(184, 100%, 22%);
+    width: 250px;
+    padding: 0px 20px;
+    height: 450px;
+}
+
+.row3 {
+    background-color: hsl(179, 100%, 13%);
+    width: 250px;
+    padding: 0px 20px;
+    height: 450px;
+}
+
+@media screen and (min-width : 1440px) {
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 375px) {
+    .flex-container{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .grid-container{ 
+        gap: 10px 10px;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 100px 100px 100px;
+        margin: 40px;
+    }
+}   
+
+body {
+    background-color: black;
+}
+
+img{
+    margin-top: 20px;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin: 20px;
+    line-height: 2;
+}
+
+.bg1 {
+    background-color: hsl(0, 0%, 95%);
+    margin: 50px;
+    padding: 100px;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    padding: 0px 20px;
+    border: none;
+    color: #000000;
+    mix-blend-mode: screen;
+    margin: 50px 20px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+
+button:hover{
+
+    background-color: #000000;;
+    color: hsl(0, 0%, 95%);
+    border:  hsl(0, 0%, 95%);
+    border: 2px solid;
+    mix-blend-mode: screen;
+
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 150px 150px 150px;
+    margin: 50px;
+}
+
+.grid-item1 {
+    background-color: hsl(31, 77%, 52%);
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.grid-item2 {
+    background-color: hsl(133, 84%, 48%);
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.grid-item3 {
+    background-color: hsl(226, 78%, 50%);
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+
+.grid-item4 {
+    background-color: hsl(0, 86%, 42%);
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.grid-item5 {
+    background-color: hsl(64, 90%, 52%);
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
