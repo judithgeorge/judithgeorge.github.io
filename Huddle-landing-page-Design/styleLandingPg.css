@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+body{
+    font-size: 18px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section:nth-child(1){
+    min-height: 100vh;
+    background-image: url("images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(193, 100%, 96%);
+}
+
+section:nth-child(2), section:nth-child(3), section:nth-child(4){  
+    min-height: 80vh;
+    background-color: white;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding: 40px 0;
+    margin: 0 2rem;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header img{
+    width: 200px;
+}
+
+.header a{
+    float: right;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 40px 10px 40px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0);
+    transition: all .3s ease;
+    color: #000000;
+}
+
+.header a:hover{
+    color: hsl(0, 0%, 50%);
+}
+
+section img{
+    margin-top: 20px;
+    max-width: 100vh;
+}
+
+.buildDiv h1{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 20px 20px 10px ;
+    padding: 20px 40px 20px 0px;
+}
+
+.buildDiv p{
+    font-family: 'Open Sans', sans-serif;;
+    color: #000000;
+    line-height: 1.8;
+    width: 80%;
+    
+    margin: 10px 20px 20px 10px;
+}
+
+.buildDiv a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 40px 10px 40px;
+    background-color: hsl(322, 100%, 50%);
+    border-radius: 25px;
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0);
+    transition: all .3s ease;
+    color: #ffffff;
+}
+
+.buildDiv a:hover{
+    background-color: hsl(322, 80%, 60%);
+}
+
+@media only screen and (max-width : 1440px) {
+    .buildDiv img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .main{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buildDiv h1{
+        font-size: 26px;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
