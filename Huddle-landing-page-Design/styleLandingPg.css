@@ -62,7 +62,7 @@ section img{
     max-width: 100vh;
 }
 
-.buildDiv h1{
+.buildDiv h1, .readyBox h1{
     color: #000000;
     font-family: 'Poppins', sans-serif;
     margin: 10px 20px 20px 10px ;
@@ -78,7 +78,7 @@ section img{
     margin: 10px 20px 20px 10px;
 }
 
-.buildDiv a {
+.buildDiv a, .readyBox a {
     display: inline-block;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -90,7 +90,7 @@ section img{
     color: #ffffff;
 }
 
-.buildDiv a:hover{
+.buildDiv a:hover, .readyBox a:hover{
     background-color: hsl(322, 80%, 60%);
 }
 
